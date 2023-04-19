@@ -16,20 +16,22 @@ body{
 
 }
 
-.logo{
-    height:100%;
-    position: relative;
-    left: 33%;
-}
-.logo img{
+.header .pic img{
+    display: block;
     width: 120px;
+    margin: auto;
+
+}
+.header .pic{
+    /* background-color: #fff; */
+    width: 100%;
 }
 
 .header{
     background-color: #a92626;
     padding: 18px 10px;
     height: 80PX;
-    width:100%;
+    /* width:100%; */
     z-index: 10;
 }
 .header #menu-toggler{
@@ -196,20 +198,24 @@ nav a:hover{
 
 
 /* 小活動頁 END| MENU & TOP START ˇ--------------------------------------------------------------------------------- */
-.titleIMG{
-    transform: scale(2.5) translateX(35%);
-    margin-top: 60px;
-    filter: drop-shadow( -1px 1px 0.5px rgb(58, 54, 46,0.5));
-    
-}
 
 .topAll{
     background-image: url(./img/TOP底圖.png);
     filter: drop-shadow( -2px -2px 0.5px rgba(172, 105, 64, 0.5));
     padding-top: 40px;
     margin-top: -40px;
+    width: 100%;
+    height:793px;
 }
 
+.titleIMG{
+    display: block;
+    transform: scale(2.5) ;
+    margin: auto;
+    margin-top: 60px;
+    filter: drop-shadow( -1px 1px 0.5px rgb(58, 54, 46,0.5));
+    
+}
 .topAll .item{
     /* background-color: #dbcbb8; */
     height: 70%;
@@ -243,14 +249,18 @@ nav a:hover{
     padding-left:15px;
 }
 .top1 img{
+    display: block;
+    margin: auto;
     filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
 }
 .top2 img{
-    padding-left:5px;
-    padding-top: 5px;
+    display: block;
+    margin: auto;
     filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
 }
 .top3 img{
+    display: block;
+    margin: auto;
     filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
 }
 .top1{
@@ -265,15 +275,14 @@ nav a:hover{
 }
 
 .menuBuy{
-    margin-top: 25px;
-    margin-bottom: 30px;
-    width: 40%;
+    width: 160px;
     height: 40px;
     font-size: 18px;
     border-radius: 0px 10px 10px 10px;
     border: none;
     background-color: #e79b7a;
-    transform: translateX(80%);
+    display: block;
+    margin: 30px auto;
     transition: all 0.3s ease;
     animation: MENU 0.5s ease  infinite alternate none;
 
@@ -300,3 +309,13 @@ nav a:hover{
     }
 }
 
+.footer{
+    font-weight: bolder;
+    font-size: 13px;
+    margin: auto;
+    width: 50px;
+    background-image: url(./img/footer.png);
+    line-height: 50px;
+    height: 100%;
+
+}
