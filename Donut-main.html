@@ -17,6 +17,9 @@
 
 <!-- loading -->
         <div id="preloader">
+            <div class="kkdonutlogo">
+                <img src="./img/浮水圖.png" alt="">
+            </div>
             <div id="status"><img src="./img/loading.gif"/>
                 <h1>Krispy Kreme</h1>
                 <p>please wait a moment</p>
@@ -195,10 +198,13 @@
 <!-- jQuery Plugin -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script>
+
     $(window).on('load', function() {
-        $('#status').fadeOut();
-        $('#preloader').delay(1000).fadeOut('slow');
-        });
+        setTimeout(function() {
+            $("#status").fadeOut();
+            $("#preloader").delay(350).fadeOut("slow");
+        }, 2000); // 添加2000毫秒的延迟
+    });
 </script>
 
 <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>
