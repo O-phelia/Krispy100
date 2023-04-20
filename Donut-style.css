@@ -26,13 +26,10 @@ body{
     z-index: 9999;
 }
   #status {/*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
-    position: fixed;
-    width: 218px;
-    height: 300px;
-    margin-left: -140px;
-    margin-top: -160px;
-    left: 53%;
-    top: 55%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     background-color: #4c8429;
 }
 #status img{
