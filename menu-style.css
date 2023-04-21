@@ -15,20 +15,20 @@ body{
 
 }
 
-.logo{
-    height:100%;
-    position: relative;
-    left: 34%;
+.header .pic img{
+    display: block;
+    width: 120px;
+    margin: auto;
+
 }
 .logo img{
-    width: 120px;
+    width: 100px;
 }
 
 .header{
     background-color: #a92626;
     padding: 18px 10px;
     height: 80PX;
-    width: 100%;
     z-index: 10;
 }
 .header #menu-toggler{

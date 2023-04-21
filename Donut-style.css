@@ -75,7 +75,6 @@ body{
     background-color: #a92626;
     padding: 18px 10px;
     height: 80PX;
-    /* width:100%; */
     z-index: 10;
 }
 .header #menu-toggler{
@@ -117,7 +116,6 @@ nav a{
 
     text-decoration:none;
     color: #ffffff;
-    font-family: 'Varela Round', sans-serif;
     font-size: 18px;
     display: block;
     text-align: center;
@@ -221,19 +219,20 @@ nav a:hover{
     justify-content: center;
 }
 .activity h1{
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 600;
+    font-family: 'Racing Sans One', cursive;
+    /* font-weight: 600; */
     font-size: 20px;
+    line-height: 25px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     cursor: default;
     color: #8e3932;
 }
 
 .activity p{
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: 13px;
     cursor: default;
     color: #fbeee7;
 
@@ -378,8 +377,71 @@ nav a:hover{
     margin: 22px;
 }
 
+/* <!-- 店鋪地圖 --> */
 
+.map{
+    width: 100%;
+    background-color: #2a4f33;
+}
+.map h1{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 40px;
+    color: #fbeee7;
+    transform: translateY(10px);
+}
+.map p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: -15px;
+    margin-bottom: 10%;
+}
+.item1{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: #fff; */
+}
+.map iframe{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 70%;
+    height: 50%;
+    margin-top: 5%;
 
+}
+
+.storeIcon{
+    display: inline-block;
+    margin-left: 10%;
+
+}
+.storeItem h2{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 3%;
+    color: #fbeee7;
+
+}
+.storeItem h4{
+
+    display: none;
+    color: #fbeee7;
+
+}
+.map   a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 0px;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.map2{
+    margin-left: 3%;
+}
 
 /* ---頁尾--- */
 .footer{
