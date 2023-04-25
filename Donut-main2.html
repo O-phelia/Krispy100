@@ -7,9 +7,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Racing+Sans+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel:wght@700&family=Racing+Sans+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./Donut-style.css">
+        <link rel="stylesheet" href="./Donut-style2.css">
     </head>
 
 
@@ -36,6 +36,7 @@
             <label for="menu-toggler"  class=" ">
                 <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
+
             <nav class="navbar ">
                 <a href="#HOME">HOME</a>
                 <a href="#NEWS">NEWS</a>
@@ -52,10 +53,22 @@
 
 <!-- 互動橫幅幻燈片----------- -->
 
+<div class="Banner container-fluid">
+    <div id="carouselExample" class="carousel slide " >
 
-        <div id="carouselExample" class="carousel slide container" >
+    <div class=" row ">
+        <div class="col col-md-7">
+            <div class="RWDbanner-item">
+                <h4>2023.04.22</h4>
+                <h1>YOU NEED SOME SWEET ENERGY！</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nemo nobis iusto iure fugiat maxime harum culpa possimus sunt corporis.</p>
+            </div>
+        </div>
 
-            <div class="carousel-inner bn-scope " id="HOME">
+        
+            <div class="col col-md-5">
+
+            <div class="carousel-inner bn-scope RWDbanner-item-2" id="HOME">
                 
                 <div class="carousel-item  active  ">
                     <img src="./img/3.png" class="d-block donut-pic " alt="...">
@@ -84,13 +97,29 @@
                     <span class="visually-hidden">Next</span>
                 </button>
 
-                
+            </div>
             </div>
         </div>
 
+    </div>
+</div>
+</div>
+<!-- 好康報報news----------------- -->
+
+<div class="news container-fluid">
+    <div class="wrap">
+        <div class="new-1">
+            <img src="https://picsum.photos/400/300?random=10">
+            <img src="https://picsum.photos/400/300?random=10">
+            <img src="https://picsum.photos/400/300?random=10">
+        </div>
+    </div>
+</div>
+
+
 
 <!-- 活動頁----------------- -->
-        <div class="container activity" id="NEWS">
+        <div class="container-fluid activity" id="NEWS">
             <div class="row">
                 <div class="col-4 activityRight">
                         <img class="activityPic w-100 "src="./img/mothers.png" alt="">
@@ -152,8 +181,29 @@
         </div>   
     </div>
 
+
+    <div class="container topAll-right">
+        <div class="item">
+            
+            <div class="txt">
+                <h1>Mother's Day Exclusive</h1>
+                <p>在特別的這天傳遞濃烈的愛與感謝，<br>母親節專屬奢華心形多拿滋，4/25甜心預購！<br><br>預購期限4/25-5/5 + 贈一張小卡</p>
+            </div>
+            <div class="txt2"> 
+                <h5>原價360</h5>
+                <h2>$320</h2>
+            </div>
+            <img src="./img/mothers.png" alt="" class="mothersCho">
+        </div>
+    </div>
+
+
+
+
+    
 <!-- -----ABOUT-------- -->
     <div class="container socialMedeia " id="ABOUT">
+        <div class="wrap">
         <div class="social">
                 <h1> FLOWER US</h1>
                 <p>| 接獲第一手最新消息及活動優惠!</p>
@@ -183,59 +233,59 @@
             <div class="col-4">
                 <img src="./img/IG3.png" alt="" class="w-100">
             </div>
-
+        </div>
         </div>
     </div>
 
     <!-- 店鋪地圖 -->
-
-    <div class="map container" id="STORES">
-        <div class="item1">
-            <h1>EVENT STORE：</h1>
-            <p>| 活動門市</p>
-        </div>
-
-        <div class="row g-3">
-            <div class="store col-6">
-                <div class="storeItem">
-                    <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
-                    <h2>誠品信義</h2>
-                    <h4>台北市信義區松高路11號B2</h4>
-                </div>
-            </div>
-            <div class="store col-6">
-                <div class="storeItem">
-                    <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
-                    <h2>新北板橋店</h2>
-                    <h4>新北市板橋區縣民大道二段7號B1 (環球購物中心B1)</h4>
-                </div>
-            </div>
-            <div class="store col-6">
-                <div class="storeItem">
-                    <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
-                    <h2>桃園中正店</h2>
-                    <h4>桃園市桃園區中正路47號1樓</h4>
-                </div>
-            </div>
-            <div class="store col-6">
-                <div class="storeItem">
-                    <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
-                    <h2>新竹SOGO店</h2>
-                    <h4>新竹市中央路239號3樓 (新竹SOGO巨城)</h4>
-                </div>
+<div class="map">
+    <div class=" container" id="STORES">
+        <div class="wrap">
+            <div class="item1">
+                <h1>EVENT STORE：</h1>
+                <p>| 活動門市</p>
             </div>
 
-        </div>
+            <div class="row g-3">
+                <div class="store col-6 col-md-12 ">
+                    <div class="storeItem">
+                        <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
+                        <h2>誠品信義</h2>
+                        <h4>台北市信義區松高路11號B2</h4>
+                    </div>
+                </div>
+                <div class="store col-6 col-md-12">
+                    <div class="storeItem">
+                        <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
+                        <h2>新北板橋店</h2>
+                        <h4>新北市板橋區縣民大道二段7號B1 (環球購物中心B1)</h4>
+                    </div>
+                </div>
+                <div class="store col-6 col-md-12">
+                    <div class="storeItem">
+                        <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
+                        <h2>桃園中正店</h2>
+                        <h4>桃園市桃園區中正路47號1樓</h4>
+                    </div>
+                </div>
+                <div class="store col-6 col-md-12">
+                    <div class="storeItem">
+                        <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
+                        <h2>新竹SOGO店</h2>
+                        <h4>新竹市中央路239號3樓 (新竹SOGO巨城)</h4>
+                    </div>
+                </div>
+            </div>
 
             <iframe  width="325" height="280" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=25.044268640707983~121.51303334011448&lvl=13.946608598077944&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
             </iframe>
-        <div class="map2" style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
-            <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;FORM=MBEDLD">檢視較大的地圖</a> &nbsp; | &nbsp;
-            <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;rtp=~pos.25.044268640707983_121.51303334011448____&amp;FORM=MBEDLD">取得路線</a>
+            <div class="map2" style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
+                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;FORM=MBEDLD">檢視較大的地圖</a> &nbsp; | &nbsp;
+                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;rtp=~pos.25.044268640707983_121.51303334011448____&amp;FORM=MBEDLD">取得路線</a>
+            </div>
         </div>
     </div>
-
-
+</div>
 
     <!-- 頁尾 -->
     <div class="footer container-fluid w-100">

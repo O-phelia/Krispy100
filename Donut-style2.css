@@ -9,7 +9,9 @@ html{
     overflow-x: hidden; 
 }
 
-
+html{
+    width: 100%;
+}
 body{
     background-image: url(./img/未命名-1.png);
     /* background-color: #3c93b5; */
@@ -87,11 +89,6 @@ body{
     right: 30px;top: 30px;
     
 }
-nav{
-    transition: 0.4s ease-in;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    
-}
 nav hr{
     margin-top: 15px;
     color: rgb(177, 96, 96);
@@ -111,6 +108,8 @@ nav h4{
     height: 760%;
     padding-top: 20px;
     width: 106%;
+    transition: 0.4s ease-in;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 nav a{
 
@@ -133,28 +132,99 @@ nav a:hover{
     box-shadow:5px 5px 5px #621616;
 }
 
+@media (min-width: 991px){
+    input{display: none;}
+    label{display: none;}
+    .navbar{
+        display: block;
+        background-color: #a92626;
+        height: 0%;
+        padding-top: 0px;
+        width: 100%;
+        transition:none;
+        clip-path: none;
+        position: absolute;
+        top: 10px;
+        right: -600px;
+
+    }
+    .navbar h4{
+        display: none;
+    }
+    .navbar hr{
+        display: none;
+    }
+    .navbar a{
+        display: inline-block;
+        margin: 0px 7px;
+
+    }
+    .header .pic img{
+        display: block;
+        width: 115px;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+}
 
 
 
 /* MOBILE 導覽列 END^ | 幻燈片START ˇ--------------------------------------------------------------------------------- */
 
-.carousel{
-    margin-top: 170px;
-    width: 100%;
-    /* background-color: #8f5959; */
+
+.RWDbanner-item{
+    transform: translate(10%,30%);
+    /* background-color: #fff; */
+    width: 90%;
+    padding-left: 20px;
 }
+
+
+.carousel{
+    margin-top: 60px;
+    width: 100%;
+    height:100%;
+    /* background-color: #901313; */
+    /* border-bottom: rgb(57, 57, 57) solid 2px; */
+
+}
+
+.Banner{
+    height: 100%;
+    width: 100%;
+/* background-color: #2f1717; */
+}
+.RWDbanner-item h1{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 40px;
+}
+.Banner .col{
+    margin-top: 60px;
+    
+}
+.Banner .col-md-5{
+    padding-right: 20px;
+}
+
+
+
+/* oooooooooooooooooooooooooooooooooooooooooo */
+
+/* 甜甜圈照片 */
 .carousel-item{
     height: 50%;
+    /* background-color: #fff; */
 }
 .donut-pic{
     /* margin: auto; */
     animation: donut 1s ease  infinite alternate none;
-    width: 100%;
-
+    width: 90%;
+    margin: auto;
 }
 
 .active img{
-    width: 100%;
+    width: 90%;
+    height: auto;
     margin: auto;
     /* background-color: #8e8a81; */
 
@@ -192,18 +262,90 @@ nav a:hover{
     }
 }
 
-/* .Krispy{
-    opacity: 0.6;
-    transform: translate(0px,-230px) rotate(-30deg);
-} */
 
-/* MOBILE BANNER橫幅幻燈片 END|小活動頁 START ˇ--------------------------------------------------------------------------------- */
+@media screen and (max-width: 767px){
+    .Banner .RWDbanner-item{
+        display: none;
+    } 
+    .Banner .col-md-7{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px){
+    .Banner .RWDbanner-item h1{
+        font-size: 35px;}
+
+    .Banner .RWDbanner-item P{
+        font-size: 14px;}
+        .Banner .RWDbanner-item{
+            width: 50%;
+            position: absolute;
+            left: 2%;
+            top: 2%;
+        }
+}
+
+@media screen and (min-width: 991px){
+    .Banner .RWDbanner-item h1{
+        font-size: 40px;}
+    .Banner .RWDbanner-item P{
+        font-size: 16px;}
+    .Banner .RWDbanner-item{
+        width: 48%;
+        position: absolute;
+        left: 7%;
+        top: 7%;
+    }
+}
+@media screen and (min-width: 1199px){
+    .Banner .RWDbanner-item h1{
+        font-size: 65px;}
+    .Banner .RWDbanner-item P{
+        font-size: 20px;
+        margin-top:-20px ;
+    }
+        
+    .Banner .RWDbanner-item{
+        width: 50%;
+
+    }
+}
+
+
+/* MOBILE BANNER橫幅幻燈片 END|news START ˇ--------------------------------------------------------------------------------- */
+.news{
+    margin-top: 50px;
+    width: 100%;
+    height: 420px;
+    background-color: #fff;
+    padding: 50px 0px;
+}
+.new-1{
+    width: 655px;
+    margin: auto;
+}
+.new-1 img{
+    display: inline-block;
+    width: 200px;
+    margin: 10px 5px;
+
+}
+@media screen and (max-width: 768px){
+    .news{
+        display: none;
+    }
+    .wrap{
+        width: 960px;
+    }
+}
+
+/* news END|小活動頁 START ˇ--------------------------------------------------------------------------------- */
 
 
 .activity{
     background-color: #e79b7a;
     height: 180px;
-    margin-top: 20%;
+    margin-top: 5%;
 
     box-shadow: 0px -25px 30px rgba(255, 255, 255, 0.4);
 }
@@ -237,7 +379,11 @@ nav a:hover{
     color: #fbeee7;
 
 }
-
+@media screen and (min-width: 768px){
+    .activity{
+        display: none;
+    }
+}
 
 
 /* 小活動頁 END| MENU & TOP START ˇ--------------------------------------------------------------------------------- */
@@ -351,9 +497,98 @@ nav a:hover{
         opacity: 1;
     }
 }
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+.topAll-right {
+    /* 设置新div的样式和内容 */
+    background-image: url(./img/TOP底圖.png);
+    height: 793px;
+    padding: 20px;
+    margin-top: -40px;
+    filter: drop-shadow( -2px -2px 0.5px rgba(172, 105, 64, 0.5));
+    position: relative;
+
+}
+
+.topAll-right .mothersCho{
+    width: 58%;
+    position: absolute;
+    bottom: 15%;
+    right: 10px;
+}
+.topAll-right .txt{
+    position: absolute;
+    top: 10%;
+    margin-bottom: 10px;
+}
+.topAll-right .txt h1{
+    font-family: 'Racing Sans One', cursive;
+    font-size: 60px;
+    color: #5d0c0c;
+
+}
+.topAll-right .txt p{
+    font-size: 20px;
+    color: #5d0c0c;
+    font-weight: 500;
+}
+.topAll-right .txt2{
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+}
+.topAll-right .txt2 h5{
+    font-size: 20px;
+    text-decoration: line-through;
+
+}
+.topAll-right .txt2 h2{
+    font-size: 80px;
+    font-family: 'Racing Sans One', cursive;
+    color: #5d0c0c;
+}
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+@media (min-width: 768px) {
+    /* 如果屏幕宽度大于768px，将原来的div和新的div分别设置为左右两个块级元素 */
+    #MENU, .topAll-right {
+        display: block;
+        width: 50%;
+        float: left;
+        margin-top: -60px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    /* 如果屏幕宽度小于768px，恢复原来的div元素的样式 */
+    .topAll-right {
+        display: none;
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---social--- */
 .socialMedeia{
     margin-top: 30px;
+}
+.socialMedeia .wrap{
+    width: 960px;
+    margin: auto;
+    padding: 0px 10px;
 }
 .social h1{
     font-family: 'Racing Sans One', cursive;
@@ -377,11 +612,29 @@ nav a:hover{
     margin: 22px;
 }
 
+
+@media (max-width: 991px) {
+    /* 如果屏幕宽度小于768px，恢复原来的div元素的样式 */
+    .socialMedeia .wrap{
+        width: 100%;
+        padding: 0px;
+    }
+
+}
+
+
+
+
 /* <!-- 店鋪地圖 --> */
 
 .map{
     width: 100%;
     background-color: #2a4f33;
+}
+.map .wrap{
+    width: 960px;
+    margin: auto;
+    position: relative;
 }
 .map h1{
     font-family: 'Racing Sans One', cursive;
@@ -401,17 +654,18 @@ nav a:hover{
     display: block;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: -7%;
     /* background-color: #fff; */
 }
 .map iframe{
-    display: block;
-    margin: auto;
+    position: absolute;
+    top: 25%;
+    right: -10%;
     border-radius: 10px;
     width: 70%;
-    height: 50%;
-    margin-top: 5%;
-
+    height: 60%;
 }
+
 
 .storeIcon{
     display: inline-block;
@@ -440,7 +694,47 @@ nav a:hover{
 
 }
 .map2{
-    margin-left: 3%;
+    margin-left: 40%;
+
+}
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+@media (min-width: 991px){
+    .map iframe{
+        position: absolute;
+        top: 25%;
+        right: -20%;
+        border-radius: 10px;
+        width: 70%;
+        height: 60%;
+    }
+    .map2{
+        margin-left: 50%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    /* 如果屏幕宽度小于991px */
+    .map .wrap{
+        width: 100%;
+    }
+
+    .map iframe{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+        width: 70%;
+        height: 50%;
+        margin-top: 5%;
+    
+    }
+    .map2{
+        margin-left: 3%;
+    }
 }
 
 /* ---頁尾--- */

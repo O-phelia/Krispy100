@@ -17,8 +17,9 @@ body{
 
 .header .pic img{
     display: block;
-    width: 120px;
+    width: 115px;
     margin: auto;
+    margin-top: -10px;
 
 }
 .logo img{
@@ -28,7 +29,7 @@ body{
 .header{
     background-color: #a92626;
     padding: 18px 10px;
-    height: 80PX;
+    height: 65PX;
     z-index: 10;
 }
 .header #menu-toggler{
@@ -43,7 +44,7 @@ body{
 .fa-house-chimney{
     transform: scale(1.5);
     position: absolute;
-    left: 30px;top: 40px;
+    left: 30px;top: 30px;
 }
 .shopcar{
     transition: 0.6s ease-in;
