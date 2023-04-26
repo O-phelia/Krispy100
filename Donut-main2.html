@@ -25,7 +25,7 @@
                 <p>please wait a moment</p>
             </div>
         </div> -->
-
+        
 <!-- 導覽列----------------- -->
         <div class="header container-fluid fixed-top" >
             <div class="pic">
@@ -37,11 +37,12 @@
                 <i class="fa-solid fa-bars fa-2xl"></i>
             </label>
 
+        
             <nav class="navbar ">
                 <a href="#HOME">HOME</a>
-                <a href="#NEWS">NEWS</a>
+                <!-- <a href="#NEWS">NEWS</a> -->
                 <a href="#MENU">MENU</a>
-                <a href="#ABOUT">ABOUT</a>
+                <a href="#MORE">MORE</a>
                 <a href="#STORES">STORES</a>
                 <hr> 
                 <h4>|客服時間 |9:00-18:00 | 聯絡方式 |Krispy@hotmail.com </h4>
@@ -55,7 +56,7 @@
 
 <div class="Banner container-fluid">
     <div id="carouselExample" class="carousel slide " >
-
+        <h1 class="bgTxt">YOU NEED SOME <br>SWEET  ENERGY！</h1>
     <div class=" row ">
         <div class="col col-md-7">
             <div class="RWDbanner-item">
@@ -106,7 +107,7 @@
 </div>
 <!-- 好康報報news----------------- -->
 
-<div class="news container-fluid">
+<div class="news container-fluid" >
     <div class="wrap">
         <div class="new-1">
             <img src="https://picsum.photos/400/300?random=10">
@@ -119,13 +120,13 @@
 
 
 <!-- 活動頁----------------- -->
-        <div class="container-fluid activity" id="NEWS">
+        <div class="container-fluid activity" >
             <div class="row">
                 <div class="col-4 activityRight">
                         <img class="activityPic w-100 "src="./img/mothers.png" alt="">
                 </div>
                 <div class="col-8">
-                        <div class="txt">
+                        <div class="txt" >
                             <h1>Mother's Day Exclusive</h1>
                             <p>在特別的這天傳遞濃烈的愛與感謝，母親節專屬奢華心形多拿滋，4/25甜心預購！</p>
                         </div>
@@ -182,7 +183,7 @@
     </div>
 
 
-    <div class="container topAll-right">
+    <div class="container topAll-right" >
         <div class="item">
             
             <div class="txt">
@@ -202,19 +203,19 @@
 
     
 <!-- -----ABOUT-------- -->
-    <div class="container socialMedeia " id="ABOUT">
+    <div class="container socialMedeia " >
         <div class="wrap">
-        <div class="social">
+        <div class="social" >
                 <h1> FLOWER US</h1>
                 <p>| 接獲第一手最新消息及活動優惠!</p>
-            <div class="href">
+            <div class="href" id="MORE">
                 <a href="https://www.instagram.com/krispykreme/"><i class="icon fa-2xl fa-brands fa-instagram" style="color: #ffffff;"> </i></a>
                 <a href="https://www.facebook.com/krispykremetaiwan"><i class="icon fa-2xl fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
                 <a href="https://twitter.com/krispykreme"><i class="icon fa-2xl fa-brands fa-twitter" style="color: #ffffff;"></i></a>
             </div>
         </div>
 
-        <div class="row g-4 mt-5 mb-5">
+        <div class="row g-4 mt-5 mb-5" >
             <div class="col-4">
                 <img src="./img/IG1.png" alt="" class="w-100" >
             </div>
@@ -303,6 +304,16 @@
             $("#preloader").delay(350).fadeOut("slow");
         }, 2000); // 添加2000毫秒的延迟
     });
+</script>
+<script>
+
+        $(document).ready(function() {
+        // 監聽選單點擊事件
+        $('.navbar a').on('click', function() {
+        // 點擊後自動收合
+        $('#menu-toggler').prop('checked', false);
+        });
+        });
 </script>
 
 <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>

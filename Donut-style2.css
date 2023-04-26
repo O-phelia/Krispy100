@@ -15,7 +15,7 @@ html{
 body{
     background-image: url(./img/未命名-1.png);
     /* background-color: #3c93b5; */
-
+    
 }
 
 #preloader {/*   這是整個會蓋住畫面的底色色塊  */
@@ -105,7 +105,8 @@ nav h4{
     display: block;
     background-color: #831d1d;
     margin-left: -11px;
-    height: 760%;
+    margin-top: -10px;
+    height: 1000%;
     padding-top: 20px;
     width: 106%;
     transition: 0.4s ease-in;
@@ -131,10 +132,13 @@ nav a:hover{
     background-color: #581313;
     box-shadow:5px 5px 5px #621616;
 }
+/* ooooooooooooooooooooooooooooooooooooooooooooooooo */
 
 @media (min-width: 991px){
     input{display: none;}
     label{display: none;}
+
+    
     .navbar{
         display: block;
         background-color: #a92626;
@@ -145,7 +149,7 @@ nav a:hover{
         clip-path: none;
         position: absolute;
         top: 10px;
-        right: -600px;
+        right:-58%;
 
     }
     .navbar h4{
@@ -156,7 +160,7 @@ nav a:hover{
     }
     .navbar a{
         display: inline-block;
-        margin: 0px 7px;
+        margin: 0px 10px;
 
     }
     .header .pic img{
@@ -164,6 +168,27 @@ nav a:hover{
         width: 115px;
         margin-left: 50px;
         margin-top: -10px;
+    }
+
+    nav a:hover{
+        background-color:#a92626;
+        box-shadow:none;
+        color: rgb(48, 227, 240);
+        
+    }
+
+    }
+    
+@media (min-width: 1200px){
+    .navbar{position: absolute;
+        top: 10px;
+        right:-70%;
+
+    }
+    .navbar a{
+        display: inline-block;
+        margin: 0px 10px;
+
     }
 }
 
@@ -208,7 +233,6 @@ nav a:hover{
 
 
 
-/* oooooooooooooooooooooooooooooooooooooooooo */
 
 /* 甜甜圈照片 */
 .carousel-item{
@@ -262,7 +286,29 @@ nav a:hover{
     }
 }
 
-
+@media screen and (max-width: 577px){
+    .bgTxt{
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 35px;
+        z-index: -10;
+        position: absolute;
+        top: 10px;
+        left: 1%;
+        color: #ffffff;
+    }
+}
+@media screen and (min-width: 578px){
+    .bgTxt{
+        font-family: 'Alfa Slab One', cursive;
+        color: #ffffff;
+        
+        font-size: 50px;
+        z-index: -10;
+        position: absolute;
+        top: 10px;
+        left: 10%;
+    }
+}
 @media screen and (max-width: 767px){
     .Banner .RWDbanner-item{
         display: none;
@@ -270,19 +316,23 @@ nav a:hover{
     .Banner .col-md-7{
         display: none;
     }
+    
 }
 @media screen and (min-width: 768px){
     .Banner .RWDbanner-item h1{
-        font-size: 35px;}
+        font-size: 32px;}
 
     .Banner .RWDbanner-item P{
-        font-size: 14px;}
+        font-size: 14px;
+        width: 400px;}
         .Banner .RWDbanner-item{
             width: 50%;
             position: absolute;
             left: 2%;
-            top: 2%;
+            top: 5%;
+            /* background-color: #fff; */
         }
+        .bgTxt{display: none;}
 }
 
 @media screen and (min-width: 991px){
@@ -293,24 +343,41 @@ nav a:hover{
     .Banner .RWDbanner-item{
         width: 48%;
         position: absolute;
-        left: 7%;
+        left: 5%;
         top: 7%;
+        /* background-color: #fff; */
     }
 }
-@media screen and (min-width: 1199px){
+@media screen and (min-width: 1200px){
     .Banner .RWDbanner-item h1{
-        font-size: 65px;}
+        font-size: 60px;}
     .Banner .RWDbanner-item P{
         font-size: 20px;
         margin-top:-20px ;
+        width: 550px;
     }
         
     .Banner .RWDbanner-item{
         width: 50%;
+        height: 400px;
+        position: absolute;
+        left: 5%;
+        top: -5%;
+        /* background-color: #563a3a; */
 
     }
+
 }
 
+@media screen and (min-width: 1400px){
+    .Banner .RWDbanner-item{
+        width: 52%;
+        height: 400px;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+}
+}
 
 /* MOBILE BANNER橫幅幻燈片 END|news START ˇ--------------------------------------------------------------------------------- */
 .news{
@@ -330,7 +397,7 @@ nav a:hover{
     margin: 10px 5px;
 
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .news{
         display: none;
     }
