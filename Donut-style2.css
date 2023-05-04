@@ -14,7 +14,6 @@ html{
 }
 body{
     background-image: url(./img/未命名-1.png);
-    /* background-color: #3c93b5; */
     
 }
 
@@ -67,20 +66,26 @@ body{
 
 .header .pic img{
     display: block;
-    width: 115px;
-    margin: auto;
-    margin-top: -10px;
+    width: 100px;
+    margin-left: 5%;
+    margin-top: 10px;
 }
 .header .pic{
-    /* background-color: #fff; */
     width: 100%;
 }
 
 .header{
+    margin: 0;
+    border: none;
+    height:40%;
+
+
+}
+.header-top{
     background-color: #a92626;
-    padding: 18px 10px;
-    height: 65PX;
-    z-index: 10;
+    margin:0 -10px;
+    width: 110%;
+    height: 60px;
 }
 .header #menu-toggler{
     display: none;
@@ -92,6 +97,8 @@ body{
     right: 30px;top: 30px;
     
 }
+
+
 nav hr{
     margin-top: 15px;
     color: rgb(177, 96, 96);
@@ -103,17 +110,16 @@ nav h4{
     margin-top: 20px;
 }
 .navbar{
-
-    /* margin-top: 0PX; */
+    
     display: block;
     background-color: #831d1d;
-    margin-left: -11px;
-    margin-top: -10px;
-    height: 1000%;
-    padding-top: 20px;
+    position: absolute;
+    top: 58px;
+    left: -20px;
     width: 106%;
     transition: 0.4s ease-in;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
 }
 nav a{
 
@@ -126,33 +132,34 @@ nav a{
     transition: 0.1s ease-in;
     
 }
-#menu-toggler:checked ~ .navbar{ 
+#menu-toggler:checked ~ .navbar{
+    overflow: auto;
+
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    box-shadow: 5px 5px 3px rgba(0, 0, 0, 1);
 }
 
-nav a:hover{
-    background-color: #581313;
-    box-shadow:5px 5px 5px #621616;
-}
+
 /* ooooooooooooooooooooooooooooooooooooooooooooooooo */
 
 @media (min-width: 991px){
     input{display: none;}
     label{display: none;}
 
-    
+    .header{
+        position: relative;
+    }
     .navbar{
         display: block;
-        background-color: #a92626;
+        background-color: rgba(39, 25, 25, 0);
+
+        /* background-color: rgba(0,0,0,0); */
         height: 0%;
         padding-top: 0px;
-        width: 100%;
+        width: 50%;
         transition:none;
         clip-path: none;
-        position: absolute;
-        top: 10px;
-        right:-58%;
+        margin-left: 65%;
+        margin-top: -50px;
 
     }
     .navbar h4{
@@ -170,7 +177,6 @@ nav a:hover{
         display: block;
         width: 115px;
         margin-left: 50px;
-        margin-top: -10px;
     }
 
     nav a:hover{
@@ -183,9 +189,9 @@ nav a:hover{
     }
     
 @media (min-width: 1200px){
-    .navbar{position: absolute;
-        top: 10px;
-        right:-70%;
+    .navbar{
+        margin-left: 75%;
+        margin-top: -50px;
 
     }
     .navbar a{
@@ -194,7 +200,6 @@ nav a:hover{
 
     }
 }
-
 
 
 /* MOBILE 導覽列 END^ | 幻燈片START ˇ--------------------------------------------------------------------------------- */
@@ -220,6 +225,8 @@ nav a:hover{
 .Banner{
     height: 100%;
     width: 100%;
+    z-index: 2;
+
 /* background-color: #2f1717; */
 }
 .RWDbanner-item h1{
@@ -254,7 +261,6 @@ nav a:hover{
     height: auto;
     margin: auto;
     /* background-color: #8e8a81; */
-
 }
 
 
@@ -285,7 +291,6 @@ nav a:hover{
     }
     100%{
         transform: translateY(-20px) ;
-
     }
 }
 
