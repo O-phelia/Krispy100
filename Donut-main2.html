@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale=1.0, user-scalable=0>
         <title>Krispy Kreme</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,18 +13,19 @@
     </head>
 
 
-    <body>  
+    <body >  
 
 <!-- loading -->
-        <!-- <div id="preloader">
+        <div id="preloader">
             <div class="kkdonutlogo">
                 <img src="./img/浮水圖.png" alt="">
             </div>
-            <div id="status"><img src="./img/loading.gif"/>
-                <h1>Krispy Kreme</h1>
+            <div id="status">
+                <img  class="loading" src="./img/loading.gif"/>
+                <h2>Krispy Kreme</h2>
                 <p>please wait a moment</p>
             </div>
-        </div> -->
+        </div>
         
 <!-- 導覽列----------------- -->
         <div class="header container-fluid fixed-top" >
@@ -203,7 +204,7 @@
 
     
 <!-- -----ABOUT-------- -->
-    <div class="container socialMedeia " >
+    <div class="container-fluid socialMedeia " >
         <div class="wrap">
         <div class="social" >
                 <h1> FLOWER US</h1>
@@ -240,7 +241,7 @@
 
     <!-- 店鋪地圖 -->
 <div class="map">
-    <div class=" container" id="STORES">
+    <div class=" container-fluid" id="STORES">
         <div class="wrap">
             <div class="item1">
                 <h1>EVENT STORE：</h1>
