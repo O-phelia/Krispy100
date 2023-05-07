@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden; 
+}
+
+body{
+    background-color: #ebe7e0;
+}
+
+.header .pic img{
+    display: block;
+    width: 115px;
+    margin: auto;
+    margin-top: -10px;
+
+}
+
+.header{
+    background-color: #a92626;
+    padding: 18px 10px;
+    height: 65PX;
+    z-index: 10;
+}
+.fa-basket-shopping{
+    transform: scale(1.5);
+    position: absolute;
+    right: 30px;top: 40px;
+    
+}
+.fa-house-chimney{
+    transform: scale(1.5);
+    position: absolute;
+    left: 30px;top: 30px;
+}
+.shopcar{
+    transition: 0.6s ease-in;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+    display: block;
+    background-color: #441010;
+    opacity: 0.8;
+    width: 80%;
+    height: 100vh;
+    margin-top: 79px;
+    /* margin-left: 95px; */
+}
+
+.quantity{
+    background: rgb(241, 209, 4);
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4d4b4b;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 5px 10px;
+}
+
+
+
+.banner2 img{
+    width: 100%;
+    height: 50%vh;
+    margin-top: 70px;
+}
+
+#menu-toggler:checked ~ .shopcar{ 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 1);
+}
+
+
+.breadcrumb{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #6a1313;
+}
+
+.menulist{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background-color: #8b4e4e; */
+    
+}
+
+.menulist .itemBox{
+    /* background-color: #fff; */
+    border-bottom: #441010 dotted 4px;
+    height: 300px;
+    width: 200px;
+    margin: 30px 20px;
+    position: relative;
+}
+
+
+
+
+.menulist .txt{
+padding-left: 20px;
+
+}
+.txt h2{
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.menulist .pic img{
+    width: 98%;
+    margin:0px 5px;
+    filter: drop-shadow( -7px 6px 1px rgb(58, 54, 46,0.5));
+}
+
+.menulist button{
+    background-color:  #c9c2a9;
+    /* margin-left: 130px; */
+    border-radius: 50% 50% 50% 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+
+}
+.fa-plus{
+    color: #ffffff;
+    
+}
+.menulist button:active{
+    background-color:  #9ea494;
+}
+
+@media (max-width: 800px){
+    .menulist{
+        display: flex;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+    }
+    .menulist .itemBox{
+
+        border-bottom: #441010 dotted 4px;
+        height: 270px;
+        width: 150px;
+        margin: 30px 5px;
+        position: relative;
+    }
+    .menulist button{
+        background-color:  #c9c2a9;
+        /* margin-left: 130px; */
+        border-radius: 50% 50% 50% 50%;
+        width: 40px;
+        height: 40px;
+        border: none;
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+    
+    }
+}
+
+/* 購物車 */
+
+.car{
+    
+    position: fixed;
+    top:0;
+    left: 110%;
+    width: 500px;
+    z-index: 5;
+    background-color: #453E3B;
+    height: 100vh;
+    transition: 0.5s ease;
+    box-shadow:-10px 0px 10px rgba(0,0,0,0.5);
+}
+.buy .car{
+    transform: translateX(-570px);
+}
+
+.car .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.car h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+.content{
+    transition: 0.3s ease-in-out;
+}
+.buy .content{
+    transform: translateX(-200px);
+    
+}
+
+
+.checkOut{
+    display: flex;
+    margin-bottom: 10%;
+    margin-left: 20%;
+}
+.total{
+    font-size: 20px;
+    background-color: #f3ca9b;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    margin-right: 5%;
+
+    cursor: auto;
+}
+.closeShopping{
+
+    font-size: 20px;
+    background-color: #f4972d;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 2%;
+    width: 30%;
+    cursor: pointer;
+    
+}
+
+.closeShopping:hover{
+    background-color: #c6781e;
+    transition: 0.3s ease-in-out;
+
+}
+.listCar{
+    scroll-behavior: smooth;
+    overflow: auto;
+    height: 600px;
+}
+.listCar li{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 130px repeat(3, 1fr);
+    row-gap: 50px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin-right: 15px;
+    padding-right: 15px;
+    /* margin-left: -5px; */
+    background-color: #756c6c;
+}
+.listCar div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCar li img{
+    width: 90%;
+}
+.listCar li button{
+    width: 20px;
+    margin: 0 7px;
+    background-color: rgba(255, 241, 241, 0.333);
+    border: none;
+}
+.listCard .count{
+    margin: 0 10px;
+}
+.listCar li button:active{
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+@media (max-width: 800px){
+    .car{
+    
+        position: fixed;
+        top:0;
+        left: 110%;
+        width: 400px;
+        z-index: 5;
+        background-color: #453E3B;
+        height: 100vh;
+        transition: 0.5s ease;
+    }
+    .buy .car{
+        transform: translateX(-420px);
+    }
+    .listCar li img{
+        width: 75%;
+    }
+    .listCar li{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 130px repeat(3, 1fr);
+        row-gap: 50px;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-size: 13px;
+        margin-right: 10%;
+        /* padding-right: 5%; */
+        margin-left: -1%;
+        padding:5% 3% 5% -5% ;
+        background-color: #756c6c;
+    }
+}
+
+/* 活動 */
+
+
+.activity{
+    background-color: #e79b7a;
+    height: 100%;
+    z-index: -5;
+    margin-top: 10%;
+    width: 100%;
+    z-index: -1;
+    box-shadow: 0px -25px 30px rgba(255, 255, 255, 0.4);
+}
+.activityPic{
+    /* margin-top: %; */
+    /* background-color: #fff; */
+    margin: auto;
+}
+.activity txt{
+    height: 130px;
+}
+.activityRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.activity h1{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: default;
+    color: #8e3932;
+}
+
+.activity p{
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: default;
+    color: #fbeee7;
+
+}
+.activity a{
+    text-decoration: none;
+    color: #441010;
+    font-size: 18px;
+    margin-top: 30px;
+}
