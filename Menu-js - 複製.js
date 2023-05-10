@@ -98,37 +98,43 @@ let products=[
         name:'Krispy拿鐵(冰)',
         price:95,
         cal:160,
-    },{
+    },
+    {
         id:13,
         image:'13.png',
         name:'Krispy卡布奇諾',
         price:75,
         cal:256,
-    },{
+    },
+    {
         id:14,
         image:'14.png',
         name:'草莓拿鐵果昔',
         price:140,
         cal:350,
-    },{
+    },
+    {
         id:15,
         image:'15.png',
         name:'巧克力牛奶冰沙',
         price:115,
         cal:410,
-    },{
+    },
+    {
         id:16,
         image:'16.png',
         name:'錫蘭紅茶(無糖)',
         price:75,
         cal:90,
-    },{
+    },
+    {
         id:17,
         image:'17.png',
         name:'熱牛奶',
         price:85,
         cal:150,
-    },{
+    },
+    {
         id:18,
         image:'18.png',
         name:'香蕉彩虹果昔',
@@ -197,16 +203,32 @@ function reload(){
                 <div><p>${value.price.toLocaleString()}</p></div>
 
             <div>
-                <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
+                <button onclick="ChangeQuantity(${key}, ${value.quantity - 1})">-</button>
                 <div class="count">${value.quantity}</div>
-                <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                <button onclick="ChangeQuantity(${key}, ${value.quantity + 1})">+</button>
             </div>`;
 
             listCar.appendChild(newDiv);
         }
 
     })
+    // 7.最後顯示總價與總數，toLocaleString()是js函式庫之一 可根據地區設定價格(千進位逗點標記)時間..等等
     total.innerText = totalPrice.toLocaleString();
     quantity.innerText = count;
 
+}
+
+// 數量增減的函式
+function ChangeQuantity(key,quantity){
+
+    // 如果數量為0則刪除陣列
+    if (quantity == 0){
+        delete listCars[key];
+    }else{
+        listCars[key].quantity = quantity;
+        listCars[key].price = quantity * products[key].price;
+    }
+
+    // 再執行一次reloadCard函式
+    reload();
 }
