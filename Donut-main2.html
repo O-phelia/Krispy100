@@ -16,7 +16,7 @@
     <body >  
 
 <!-- loading -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div class="kkdonutlogo">
                 <img src="./img/浮水圖.png" alt="">
             </div>
@@ -25,14 +25,19 @@
                 <h2>Krispy Kreme</h2>
                 <p>please wait a moment</p>
             </div>
-        </div>
+        </div> -->
         
 <!-- 導覽列----------------- -->
-        <div class="header fixed-top container-fluid">
+
+        <div class="header fixed-top container-fluid" id="header">
             <div class="header-top container-fluid">
                 <div class="pic">
                     <img src="./img/logo.png" alt="" class=" logo ">
                 </div>
+            </div>
+
+            <div class="user">
+                <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-user fa-2xl"></i></a>
             </div>
 
                     <!-- 下拉式選單 -->
@@ -40,17 +45,46 @@
                     <i class="fa-solid fa-bars fa-2xl"></i>
                 </label>
                 <input type="checkbox" name="" id="menu-toggler">
-        
-            <nav class="navbar">
-                <a href="#HOME">HOME</a>
-                <a href="#MENU">MENU</a>
-                <a href="#MORE">MORE</a>
-                <a href="#STORES">STORES</a>
+
+
+
+            <nav class="navbar"id="navbar">
+                <a href="#user" data-bs-toggle="modal" data-bs-target="#exampleModal" >會員登入</a>
+                <a href="#MENU">菜單商品</a>
+                <a href="#MORE">最新消息</a>
+                <a href="#STORES">門市資訊</a>
                 <hr> 
                 <h4>|客服時間 |9:00-18:00 | 聯絡方式 |Krispy@hotmail.com </h4>
             </nav>
-        </div>
 
+        </div>
+        
+        <!-- 登入介面 -->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+            <div class="modal-dialog modal-dialog-centered mx-auto">
+                <div class="modal-content mx-auto">
+                    <div class="modal-header">
+                        <h1 class="modal-title " id="exampleModalLabel">Krispy Kreme 會員登錄</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-body-content">
+                            <h3>帳號：</h3>
+                            <input type="text" name="" id="text" >
+                            <h3>密碼：</h3>
+                            <input type="password" name="" id="password">
+                            <br>
+                            <input type="checkbox" name=" " id="box"><h5>記住我</h5>
+                        </div>
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">登入</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">註冊</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
 
 
 <!-- 互動橫幅幻燈片----------- -->
@@ -58,8 +92,9 @@
     <div class="Banner container-fluid">
         <div id="carouselExample" class="carousel slide " >
             <h1 class="bgTxt">YOU NEED SOME <br>SWEET  ENERGY！</h1>
+            
         <div class=" row ">
-            <div class="col col-md-7">
+            <div class="col col-md-7 RWDbanner">
                 <div class="RWDbanner-item">
                     <h4>2023.04.22</h4>
                     <h1>YOU NEED SOME SWEET ENERGY！</h1>
@@ -68,7 +103,7 @@
             </div>
 
             
-                <div class="col col-md-5">
+                <div class="donutAnimate col col-md-5">
 
                     <div class="carousel-inner bn-scope RWDbanner-item-2" id="HOME">
                         
@@ -106,17 +141,7 @@
         </div>
     </div>
 
-    <!-- 好康報報news----------------- -->
 
-    <div class="news container-fluid" >
-        <div class="wrap">
-            <div class="new-1">
-                <img src="https://picsum.photos/400/300?random=10">
-                <img src="https://picsum.photos/400/300?random=10">
-                <img src="https://picsum.photos/400/300?random=10">
-            </div>
-        </div>
-    </div>
 
 
 
@@ -124,7 +149,7 @@
             <div class="container-fluid activity" >
                 <div class="row">
                     <div class="col-4 activityRight">
-                            <img class="activityPic w-100 "src="./img/mothers.png" alt="">
+                            <img class="activityPic  "src="./img/mothers.png" alt="">
                     </div>
                     <div class="col-8">
                             <div class="txt" >
@@ -135,58 +160,81 @@
                 </div>
             </div>
 
+    <!-- 好康報報news----------------- -->
+
+    <div class="news container" >
+        <div class="wrap ">
+            <div class="new-1">
+                <img src="./img/早餐活動.png">
+
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- ------熱賣及menu----------- -->
-        <div class="container topAll" id="MENU">
-            <img class="titleIMG" src="./img/top 標題.png" alt="">
 
-            <div class="container top1">
-                <div class="row p-2 g-3">
-                    <div class=" col-5 ">
-                        <img src="./img/7.png" alt="" >
-                    </div>
-                    <div class="item col-7 ">
-                        <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 榛果核桃咖啡</h2>
-                        <p>減糖系列，濃郁咖啡巧克力口味，午茶時段好夥伴！</p>
-                        <a href="./Menu - 複製.html"> ALL MENU → </a>
-                    </div>
-                </div>
+
+    <div class="container topAll" id="MENU">
+
+        <div class="top-left">
+            
+            <div class="titleIMG">
+                <img  src="./img/top 標題.png" alt="">
             </div>
 
-            <div class="container top2">
-                <div class="row p-2 g-3">
-                    <div class="item col-7 ">
-                        <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 金桔檸檬</h2>
-                        <p>酸酸甜甜，少女的糖衣，實在像極了初戀的滋味呀！</p>
-                        <a href="./Menu - 複製.html"> ALL MENU →</a>
+            <div class="top-left-Content">
+                
+                <div class="container top1 ">
+                    <div class="row g-3">
+                        <div class="  col-5 ">
+                            <img src="./img/7.png" alt="" >
+                        </div>
+                        <div class="item  col-7 ">
+                            <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 榛果核桃咖啡</h2>
+                            <p>減糖系列，濃郁咖啡巧克力口味，午茶時段好夥伴！</p>
+                            <a href="./Menu - 複製.html"> ALL MENU → </a>
+                        </div>
                     </div>
-                    <div class=" col-5 ">
-                        <img src="./img/1.png" alt="" >
+                </div>
+
+                <div class="container top2">
+                    <div class="row  g-3">
+                        <div class="item  col-7 ">
+                            <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 金桔檸檬</h2>
+                            <p>酸酸甜甜，少女的糖衣，實在像極了初戀的滋味呀！</p>
+                            <a href="./Menu - 複製.html"> ALL MENU →</a>
+                        </div>
+                        <div class="  col-5 ">
+                            <img src="./img/1.png" alt="" >
+                        </div>
                     </div>
+                </div>
+
+                <div class="container top3">
+                    <div class="row  g-3">
+                        <div class="  col-5 ">
+                            <img src="./img/14.png" alt="" >
+                        </div>
+                        <div class="item  col-7 ">
+                            <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 莓果醇奶冰沙</h2>
+                            <p>冰鎮首選！選用初鹿鮮奶製成，莓果酸甜健康滿分！</p>
+                            <a href="./Menu - 複製.html"> ALL MENU → </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <button class="menuBuy" ><a href="./Menu - 複製.html">Menu and Buy</a></button>
                 </div>
             </div>
-
-            <div class="container top3">
-                <div class="row p-2 g-3">
-                    <div class=" col-5 ">
-                        <img src="./img/14.png" alt="" >
-                    </div>
-                    <div class="item col-7 ">
-                        <h2><i class="fa-solid fa-star fa-xs" style="color: #511f31;"></i> 莓果醇奶冰沙</h2>
-                        <p>冰鎮首選！選用初鹿鮮奶製成，莓果酸甜健康滿分！</p>
-                        <a href="./Menu - 複製.html"> ALL MENU → </a>
-                    </div>
-                    </div>
-                        <button class="menuBuy" ><a href="./Menu - 複製.html">Menu and Buy</a></button>
-                    </div>
-                </div>
-            </div>   
         </div>
 
 
-        <div class="container topAll-right" >
-            <div class="item">
-                
+        <div class=" top-right" >
+            <div class="top-right-Content">
                 <div class="txt">
                     <h1>Mother's Day Exclusive</h1>
                     <p>在特別的這天傳遞濃烈的愛與感謝，<br>母親節專屬奢華心形多拿滋，4/25甜心預購！<br><br>預購期限4/25-5/5 + 贈一張小卡</p>
@@ -199,10 +247,10 @@
             </div>
         </div>
 
+    </div>
 
 
 
-        
     <!-- -----ABOUT-------- -->
         <div class="container-fluid socialMedeia " >
             <div class="wrap">
@@ -320,6 +368,7 @@
         });
 </script>
 
+<script src="./main.js"></script>
 <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>

@@ -48,10 +48,11 @@ body .pic3{
     height: 65PX;
     z-index: 10;
 }
+
 .fa-basket-shopping{
     transform: scale(1.5);
     position: absolute;
-    right: 40px;top: 38px;
+    right: 35px;top: 38px;
     color: #ffffff;
     cursor: pointer;
     
@@ -59,7 +60,7 @@ body .pic3{
 .fa-house-chimney{
     transform: scale(1.5);
     position: absolute;
-    left: 45px;top: 35px;
+    left: 40px;top: 35px;
     color: #ffffff;
 
 }
