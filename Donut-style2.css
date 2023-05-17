@@ -318,18 +318,40 @@ nav a{
         margin-top: 10px;
     }
 }
-
+/* ------人生跑馬燈------ */
+marquee{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 550;
+    letter-spacing:1.5px;
+    color: #3e3b3b;
+    background-color: #dfc832;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    opacity: 0.8;
+    box-shadow: 0px 2px 7px;
+}
 
 /* MOBILE 導覽列 END^ | 幻燈片START ˇ--------------------------------------------------------------------------------- */
+.Banner{
+    background-image: url(./img/未命名-1.png);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
 
+}
 
 .RWDbanner-item{
     margin-top: 5%;
     margin-left: 10%;
     width: 100%;
     padding-left: 20px;
-}
 
+}
 
 .carousel{
     
@@ -339,16 +361,8 @@ nav a{
     /* background-color: #901313; */
     margin: auto;
     margin-top: 50px;
-
 }
 
-.Banner{
-    background-image: url(./img/未命名-1.png);
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-
-}
 .RWDbanner-item h1{
     font-family: 'Alfa Slab One', cursive;
     font-size: 40px;
@@ -384,9 +398,8 @@ nav a{
 /* 按鈕 */
 .carousel-control-next{
     height: 90px;
-    margin-right: 16%;
-    margin-top: 55%;
-    /* opacity: 0; */
+    margin-top: 130px;
+    margin-right: 40px;
 }
 .nextbtn{
     width: 150%;
@@ -401,7 +414,6 @@ nav a{
 @keyframes donut{
     0%{
     transform: translateY(30px) ;
-        
     }
     100%{
         transform: translateY(-20px) ;
@@ -413,13 +425,20 @@ nav a{
 }
 @media screen and (max-width: 575px){
     /* 手機直向 */
+    marquee{
+        height: 30px;
+        font-size: 14px;
+        margin-top: 70px;
+        margin-bottom: -60px;
+        width: 95%;
+        background-color: #f9dfae;
+    }
     .bgTxt{
         font-family: 'Alfa Slab One', cursive;
-        font-size: 45px;
+        font-size: 40px;
         position: absolute;
         top: 10px;
         left: 5%;
-        color: #ffffff;
     }
     .Banner .RWDbanner-item{
         display: none;
@@ -430,9 +449,25 @@ nav a{
     .donut-pic{
         width: 80%;
     }
+    .RWDbanner-item-2{
+        width: 110%;
+        margin-left: -10px;
+    }
+    .carousel-item{
+        height: 100%;
+        /* background-color: #fff; */
+    }
+    .carousel-control-next{
+        margin-right: 16%;
+        margin-top: 53%;
+    }
 }
 @media screen and (min-width:576px){
     /* 手機橫向以上 */
+    marquee{
+        margin-top: 80px;
+        margin-bottom: -80px;
+    }
     .bgTxt{display: none;}
     .RWDbanner-item{
         /* background-color: #0df137; */
@@ -446,7 +481,7 @@ nav a{
     }
     
     .donutAnimate{
-        transform: translate(5%,-10%);
+        transform: translate(5%,-9%);
     }
     .carousel{
         padding-top: 30px;}
@@ -461,29 +496,34 @@ nav a{
         height: 220px;
     }
     .carousel-control-next{
-        margin-top: 45%;
+        margin-top: 130px;
+        margin-right: 45px;
     }
+
+
 }
 @media screen and (min-width:650px){
-    /* 手機橫向以上 */
+
     .bgTxt{display: none;}
     .RWDbanner-item{
-        /* background-color: #b132df; */
         width: 110%;
     }
     .RWDbanner-item h1{
         font-size: 30px;
     }
     .donutAnimate{
-        transform: translate(8%,-10%);
+        transform: translate(8%,-15%);
         height: 250px;
+        /* background-color: #fff; */
     }
     .donut-pic{
         width: 82%;
     }
     .carousel-control-next{
-        margin-top: 50%;
+        margin-top: 160px;
+        margin-right: 50px;
     }
+
 }
 
 
@@ -501,11 +541,11 @@ nav a{
     width: 370px;
     }
     .RWDbanner-item{
-        width: 95%;
+        width: 100%;
         /* background-color: #dfc832; */
     }
     .donutAnimate{
-        transform: translate(-12%,-10%);
+        transform: translate(-10%,-5%);
         height: 320px;
     }
     .carousel-item{
@@ -515,7 +555,8 @@ nav a{
         width: 90%;
     }
     .carousel-control-next{
-        margin-top: 55%;
+        margin-top: 200px;
+        margin-right: 60px;
     }
 
     .bgTxt{display: none;}
@@ -551,8 +592,22 @@ nav a{
         width: 95%;
     }
     .carousel-control-next{
-        margin-top: 65%;
+        width: 65px;
+        margin-top: 230px;
+        margin-right: 40px;
     }
+    marquee{
+        height: 40px;
+        width: 60%;
+        font-size: 20px;
+        color: #3e3b3b;
+        background-color: #dfc832;
+        border-radius: 10px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: -20px;
+    }
+
 }
 @media screen and (min-width: 1200px){
     /* 1200以上 */
@@ -584,7 +639,12 @@ nav a{
         width: 80%;
     }
     .carousel-control-next{
-        margin-top: 55%;
+        width: 70px;
+        margin-top: 250px;
+        margin-right: 50px;
+    }
+    marquee{
+        width: 50%;
     }
 }
 
@@ -614,7 +674,13 @@ nav a{
     .carousel-item img{
         width: 75%;
     }
+    .carousel-control-next{
+        width: 70px;
+        margin-top: 290px;
+        margin-right: 80px;
+    }
 }
+
 
 
 

@@ -4,7 +4,7 @@ const navbarLinks = document.querySelectorAll('#navbar a');
 
 menuToggler.addEventListener('change', function() {
     if (this.checked) {
-        header.style.height = '32%'; 
+        header.style.height = '350px';
     } else {
         header.style.height = ''; 
     }
