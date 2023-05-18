@@ -27,6 +27,10 @@
             </div>
         </div> -->
         
+
+        <div class="backTop ">
+            <a href="#top"><i class="fa-solid fa-circle-up fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
 <!-- 導覽列----------------- -->
 
         <div class="header fixed-top container-fluid" id="header">
@@ -40,6 +44,8 @@
                 <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-user fa-2xl"></i></a>
             </div>
 
+
+
                     <!-- 下拉式選單 -->
                 <label for="menu-toggler"  class=" ">
                     <i class="fa-solid fa-bars fa-2xl"></i>
@@ -49,9 +55,10 @@
 
 
             <nav class="navbar"id="navbar">
-                <a href="#user" data-bs-toggle="modal" data-bs-target="#exampleModal" >會員登入</a>
-                <a href="#MENU">菜單商品</a>
-                <a href="#MORE">最新消息</a>
+                <a href="#user" data-bs-toggle="modal" data-bs-target="#exampleModal" class="login">會員登入</a>
+                <a href="#NEWS">最新消息</a>
+                <a href="./Menu - 複製.html">菜單商品</a>
+                <a href="#FOLLOW" class="follow">好康追蹤</a>
                 <a href="#STORES">門市資訊</a>
                 <hr> 
                 <h4>|客服時間 |9:00-18:00 | 聯絡方式 |Krispy@hotmail.com </h4>
@@ -92,7 +99,7 @@
 
 <!-- 互動橫幅幻燈片----------- -->
 
-    <div class="Banner container-fluid">
+    <div class="Banner container-fluid" id="top">
         <marquee vspace=”30%” hspace=30 scrollamount=10><i class="fa-solid fa-bullhorn" style="color: #595959;"></i> ：線上MENU點餐超方便 ★ 母親節活動預購開跑啦 ★ 五月限定「早安好食光」1+1只要70元</marquee>
         <div id="carouselExample" class="carousel slide " >
             <h1 class="bgTxt">YOU NEED SOME <br>SWEET  ENERGY！</h1>
@@ -102,7 +109,7 @@
                 <div class="RWDbanner-item">
                     <h4>2023.04.22</h4>
                     <h1>YOU NEED SOME SWEET ENERGY！</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nemo nobis iusto iure fugiat maxime harum culpa possimus sunt corporis.</p>
+                    <p>感受甜蜜的魔法，傳遞無限的能量<br>讓Krispy Kreme開啟你一天的好心情！</p>
                 </div>
             </div>
 
@@ -181,7 +188,7 @@
     <!-- ------熱賣及menu----------- -->
 
 
-    <div class="container topAll" id="MENU">
+    <div class="container topAll" id="NEWS">
 
         <div class="top-left">
             
@@ -256,13 +263,12 @@
 
 
     <!-- -----ABOUT-------- -->
-        <div class="container-fluid socialMedeia " >
+        <div class="container-fluid socialMedeia " id="FOLLOW">
             <div class="wrap">
             <div class="social" >
-                    <h1> FLOWER US</h1>
-                    
+                    <h1> FOLLOW US</h1>
                     <p>| 接獲第一手最新消息及活動優惠!</p>
-                <div class="href" id="MORE">
+                <div class="href" >
                     <a href="https://www.instagram.com/krispykreme/"><i class="icon fa-2xl fa-brands fa-instagram" style="color: #ffffff;"> </i></a>
                     <a href="https://www.facebook.com/krispykremetaiwan"><i class="icon fa-2xl fa-brands fa-square-facebook" style="color: #ffffff;"></i></a>
                     <a href="https://twitter.com/krispykreme"><i class="icon fa-2xl fa-brands fa-twitter" style="color: #ffffff;"></i></a>
@@ -304,28 +310,28 @@
                 </div>
 
                 <div class="row g-3">
-                    <div class="store col-6 col-md-12 ">
+                    <div class="store col-6 col-sm-12 ">
                         <div class="storeItem">
                             <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
                             <h2>誠品信義</h2>
                             <h4>台北市信義區松高路11號B2</h4>
                         </div>
                     </div>
-                    <div class="store col-6 col-md-12">
+                    <div class="store col-6 col-sm-12">
                         <div class="storeItem">
                             <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
                             <h2>新北板橋店</h2>
                             <h4>新北市板橋區縣民大道二段7號B1 (環球購物中心B1)</h4>
                         </div>
                     </div>
-                    <div class="store col-6 col-md-12">
+                    <div class="store col-6 col-sm-12">
                         <div class="storeItem">
                             <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
                             <h2>桃園中正店</h2>
                             <h4>桃園市桃園區中正路47號1樓</h4>
                         </div>
                     </div>
-                    <div class="store col-6 col-md-12">
+                    <div class="store col-6 col-sm-12">
                         <div class="storeItem">
                             <i class="storeIcon fa-solid fa-store fa-2xl" style="color: #fafafa;"></i>
                             <h2>新竹SOGO店</h2>
@@ -333,20 +339,24 @@
                         </div>
                     </div>
                 </div>
-
-                <iframe  width="325" height="280" frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=25.044268640707983~121.51303334011448&lvl=13.946608598077944&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                </iframe>
-                <div class="map2" style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
-                    <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;FORM=MBEDLD">檢視較大的地圖</a> &nbsp; | &nbsp;
-                    <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;rtp=~pos.25.044268640707983_121.51303334011448____&amp;FORM=MBEDLD">取得路線</a>
+                <div class="mapGroup">
+                    <iframe   frameborder="0" src="https://www.bing.com/maps/embed?h=280&w=325&cp=25.044268640707983~121.51303334011448&lvl=13.946608598077944&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                    </iframe>
+                    <div class="map2" style="white-space: nowrap; text-align: center; width: 325px; padding: 6px 0;">
+                        <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;FORM=MBEDLD">檢視較大的地圖</a> &nbsp; | &nbsp;
+                        <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=25.044268640707983~121.51303334011448&amp;sty=r&amp;lvl=13.946608598077944&amp;rtp=~pos.25.044268640707983_121.51303334011448____&amp;FORM=MBEDLD">取得路線</a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 
         <!-- 頁尾 -->
         <div class="footer container-fluid w-100">
-                &copy; copyright 2023 Krispy Kreme by Yu-Chi 
+            <div class="copy">
+                <p>&copy; copyright 2023 Krispy Kreme by Yu-Chi </p>
+            </div>
         </div>
 
 
