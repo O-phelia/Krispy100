@@ -85,6 +85,60 @@ body .backTop:active{
     transform: scale(2) rotate(-35deg);
 }
 
+/* --- 蓋板廣告 --- */
+#myModal{
+    margin-top: 18%;
+}
+.DM{
+    width: 464px;
+    height:699px;
+}
+
+.DM-sm {
+    width: 464px;
+    position: relative;
+}
+.DM button{
+    width: 464px;
+    position: absolute;
+    bottom: -50px;
+    border: none;
+    z-index: 5;
+    background-color: rgba(225, 225, 225, 0)
+
+}
+.DM button span{
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    
+}
+.DM-bg{
+    display: none;
+}
+
+@media (min-width: 1200px){
+    #myModal{
+        margin-top: 5%;
+    }
+    .DM-bg{
+        display: block;
+        width: 531px;
+    }
+    .DM{
+        width: 531px;
+        height:800px;
+    }
+    .DM-sm{
+    display: none;
+    }
+    .DM button{
+        width: 531px;
+    }
+
+}
+
 /* ----------------loading畫面^ Header-start----------------------- */
 
 .header .pic img{
@@ -259,7 +313,6 @@ nav a:active{
     background-color: #dc6755;
 
 }
-
 
 /* ooooooooooooooooooooooooooooooooooooooooooooooooo */
 @media (max-width: 991px){

@@ -16,7 +16,7 @@
     <body >  
 
 <!-- loading -->
-        <!-- <div id="preloader">
+        <div id="preloader">
             <div class="kkdonutlogo">
                 <img src="./img/浮水圖.png" alt="">
             </div>
@@ -25,8 +25,24 @@
                 <h2>Krispy Kreme</h2>
                 <p>please wait a moment</p>
             </div>
-        </div> -->
+        </div>
         
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="DM ">                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">【 × 點擊空白處關閉 】</span>
+                    </button>
+                    <img src="./img/蓋板廣告(小).png" class="DM-sm">
+                    <img src="./img/蓋板廣告(大).png" class="DM-bg">
+                </div>
+
+            </div>
+            </div>
+        </div>
+<!-- 回上方 -->
+
 
         <div class="backTop ">
             <a href="#top"><i class="fa-solid fa-circle-up fa-2xl" style="color: #ffffff;"></i></a>
@@ -41,10 +57,8 @@
             </div>
 
             <div class="user">
-                <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-user fa-2xl"></i></a>
+                <a href="#"data-bs-toggle="modal" data-bs-target="#exampleModalLogin"><i class="fa-solid fa-user fa-2xl"></i></a>
             </div>
-
-
 
                     <!-- 下拉式選單 -->
                 <label for="menu-toggler"  class=" ">
@@ -52,10 +66,8 @@
                 </label>
                 <input type="checkbox" name="" id="menu-toggler">
 
-
-
             <nav class="navbar"id="navbar">
-                <a href="#user" data-bs-toggle="modal" data-bs-target="#exampleModal" class="login">會員登入</a>
+                <a href="#user" data-bs-toggle="modal" data-bs-target="#exampleModalLogin" class="login">會員登入</a>
                 <a href="#NEWS">最新消息</a>
                 <a href="./Menu - 複製.html">菜單商品</a>
                 <a href="#FOLLOW" class="follow">好康追蹤</a>
@@ -67,7 +79,7 @@
         </div>
         
         <!-- 登入介面 -->
-        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+        <div class="modal" id="exampleModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" >
             <div class="modal-dialog modal-dialog-centered mx-auto">
                 <div class="modal-content mx-auto">
                     <div class="modal-header">
@@ -93,8 +105,6 @@
         </div>
             
 
-
-        
 
 
 <!-- 互動橫幅幻燈片----------- -->
@@ -381,6 +391,11 @@
         $('#menu-toggler').prop('checked', false);
         });
         });
+</script>
+<script>
+        $(window).ready(() => {
+        $('#myModal').modal('show');
+        })
 </script>
 
 <script src="./main.js"></script>
