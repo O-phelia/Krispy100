@@ -7,12 +7,16 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
     overflow-x: hidden; 
+    /* overflow-y: hidden; */
+    width: 100%;
+}    /* 覆寫 Bootstrap 的 modal-open padding */
+body.modal-open {
+    padding-right: 0 !important; 
 }
 
-html{
-    width: 100%;
-}
+
 body{
+    padding: 0px;
     background-image: url(./img/BODY底圖.png);
 }
 body .backTop{
@@ -87,9 +91,31 @@ body .backTop:active{
 
 /* ------------------------- 蓋板廣告 ------------------------- */
 /* 平板768px */
-.modal-backdrop {
-    width: 100%; /* 調整為適合的寬度 */
+/* #myModal .modal-open {
+    overflow: hidden;
+    padding-right: 0px;
+} */
+
+/* .modal {
+    overflow-y: auto !important;
+} */
+/* .modal::-webkit-scrollbar{
+    display: none;
+} */
+
+/* .myModal.modal.fade.show{
+    -ms-overflow-style:none; overflow:-moz-scrollbars-none; 
+    
 }
+.myModal.modal.fade.show::-webkit-scrollbar{width:0px} */
+/* .modal-backdrop.fade.show{
+    -ms-overflow-style:none; overflow:-moz-scrollbars-none;
+}
+.modal-backdrop.fade.show::-webkit-scrollbar{width:0px} */
+
+
+
+
 #myModal .modal-content{
     width: 80%;
     margin: auto;

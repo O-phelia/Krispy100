@@ -16,7 +16,7 @@
     <body >  
 
 <!-- loading -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div class="kkdonutlogo">
                 <img src="./img/浮水圖.png" alt="">
             </div>
@@ -25,24 +25,25 @@
                 <h2>Krispy Kreme</h2>
                 <p>please wait a moment</p>
             </div>
-        </div>
-        
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"  >
+        </div> -->
+
+
+        <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="overflow-y: hidden ;padding-right: 0 px;">
             <div class="modal-dialog modal-dialog-centered mx-auto">
-            <div class="modal-content mx-auto">
-                <div class="DM mx-auto">                    
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">【 × 點擊空白處關閉 】</span>
-                    </button>
-                    <img src="./img/蓋板廣告(小).png" class="DM-sm">
-                    <img src="./img/蓋板廣告(橫).png" class="DM-mi">
-                    <img src="./img/蓋板廣告(大).png" class="DM-bg">
+                <div class="modal-content mx-auto" >
+                    <div class="DM mx-auto">                    
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">【 × 點擊空白處關閉 】</span>
+                        </button>
+                        <img src="./img/蓋板廣告(小).png" class="DM-sm">
+                        <img src="./img/蓋板廣告(橫).png" class="DM-mi">
+                        <img src="./img/蓋板廣告(大).png" class="DM-bg">
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
 
-
+        
 <!-- 回上方 -->
         <div class="backTop ">
             <a href="#top"><i class="fa-solid fa-circle-up fa-2xl" style="color: #ffffff;"></i></a>
@@ -382,8 +383,8 @@
         }, 2000); // 添加2000毫秒的延迟
     });
 </script>
-<script>
 
+<script>
         $(document).ready(function() {
         // 監聽選單點擊事件
         $('.navbar a').on('click', function() {
@@ -392,6 +393,13 @@
         });
         });
 </script>
+
+<script>
+    $('#myModal').on('hidden.bs.modal', function (e) {
+        $('body').removeClass('modal-open');
+    });
+</script>
+
 <script>
         $(window).ready(() => {
         $('#myModal').modal('show');
