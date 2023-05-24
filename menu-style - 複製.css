@@ -22,7 +22,7 @@ body .pic3{
     transform: scale(1.3);
     position: absolute;
     left:15px;
-    bottom: -1400px;
+    bottom: -120%;
     opacity: 0.5;
 }
 
@@ -112,6 +112,7 @@ body .pic3{
 }
 
 .banner2{
+    max-width: 1200px;
     width: 100%;
 
 }
@@ -164,6 +165,7 @@ body .pic3{
     flex-wrap: wrap;
     /* background-color: #47abd2; */
     position: relative;
+    
 
 }
 
@@ -214,6 +216,10 @@ cursor: default;
     
 }
 @media (min-width: 1100px){
+    .menulist{
+        padding: 0 100px;
+    }
+
 .menulist button:active{
     background-color:  #a45218;
     transition: 0.1s ease ; 
@@ -224,7 +230,8 @@ cursor: default;
     .menulist .itemBox:hover{
         transition: 0.3s ease ; 
         transform: translateY(-20px);
-        background-color: #e4d8c1;
+        /* background-color: #e4d8c1; */
+        background-image: url(./img/TOP底圖.png);
         border-radius: 20px;
         padding: 10px;
         border: none;
@@ -534,168 +541,6 @@ cursor: default;
 
 
 
-/* 活動 -------------------------------------------------- */
-
-
-.activity{
-    background-color: #e79b7a;
-    z-index: -5;
-    margin-top: 10%;
-    margin-bottom: 0;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    width: 100%;
-    box-shadow: 0px -25px 30px rgba(255, 255, 255, 0.4);
-}
-.activityPic{
-    margin: auto;
-}
-.activity img{
-    transform: scale(1);
-}
-.activity .txt{
-    height: 130px;
-    padding-left: 7%;
-
-}
-.activityLeft{
-    padding-left: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.activity h1{
-    font-family: 'Varela Round', sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-    cursor: default;
-    color: #8e3932;
-}
-
-.activity p{
-    font-size: 23px;
-    font-weight: 600;
-    margin-top: 10px;
-    margin-bottom: 3%;
-    cursor: default;
-    color: #fbeee7;
-
-}
-.activity a{
-    animation: pre 0.5s ease  infinite alternate none;
-    text-decoration: none;
-    font-weight: 600;
-    color: #b22727;
-    font-size: 20px;
-    margin: 90% 0px 5px 20%;
-    background-color: #fff;
-}
-
-@keyframes pre{
-    0%{
-        opacity: 0.1;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-/* - */
-
-@media (max-width: 1100px){
-    .activity{
-        padding-top: 20px;
-        padding-bottom: 40px;
-
-
-    }
-    .activity img{
-        padding-top: 20px;
-        transform: scale(1.2);
-    }
-    .activity .txt{
-        padding-left: 8%;
-    }
-    .activityLeft{
-        padding-left: 10%;
-    }
-    .activity a{
-        font-size: 18px;
-        /* margin: 30px 0 10px 20%; */
-
-    }
-    .activity p{
-        font-weight: 600;
-        font-size: 19px;
-        margin-bottom: 4%;
-    }
-    .activity h1{
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-}
-/* - */
-
-@media (max-width: 769px){
-
-    .activity{
-        padding-top: 20px;
-        padding-bottom: 30px;
-    }
-    .activity img{
-        padding-top: 10px;
-    }
-    .activity .txt{
-        padding-left: 8%;
-    }
-    .activityLeft{
-        padding-left: 10%;
-    }
-    .activity p{
-        font-size: 15px;
-        margin-bottom: 3%;
-    }
-    .activity h1{
-        font-size: 25px;
-    }
-
-}
-/* - */
-
-@media (max-width: 600px){
-    .activity img{
-        transform: scale(1);
-    }
-    .activity .txt{
-        padding-left: 2%;
-    }
-    .activityLeft{
-        padding-left: 2%;
-    }
-    .activity h1{
-        font-size: 18px;
-        margin-bottom: 1%;
-        margin-top: 5%;
-    }
-
-    .activity p{
-        font-size: 14px;
-        margin-bottom: 5%;
-    }
-    .activity{
-        padding-top: 2%;
-        padding-bottom: 10px;
-    }
-    .activity a{
-        font-size: 15px;
-        /* margin-top: -10%;
-        margin-bottom: 10%; */
-    }
-    }
-
-
 /* 頁尾 -------------------------------------------------- */
 
 
@@ -707,6 +552,7 @@ cursor: default;
     background-image: url(./img/footer.png);
     line-height: 50px;
     height: 100%;
+    margin-top: 10%;
 }
 .ft p{
     width: 320px;
