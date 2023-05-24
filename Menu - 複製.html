@@ -38,11 +38,16 @@
 
 
 <!-- banner -->
-
-    <div class="banner2 content container">
-        <img src="./img/kv2.jpg" alt="">
+    <div id="carousel-ad" class="carousel slide carousel-fade banner2 content container" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="./img/kv2.jpg" class="d-block w-100" >
+            </div>
+            <div class="carousel-item ">
+                <img src="./img/kv2-01.png" class="d-block w-100" >
+            </div>
+        </div>
     </div>
-
 
 
     <!-- 麵包屑 -->
@@ -86,22 +91,6 @@
 
 
 
-
-<!-- -----活動---- -->
-        <div class="container-fluid activity content" id="NEWS">
-            <div class="row">
-                <div class="col-4  activityLeft">
-                        <img class="activityPic w-100 "src="./img/mothers.png" alt="">
-                </div>
-                <div class="col-8  txt">
-                    <h1>Mother's Day Exclusive</h1>
-                    <p>在特別的這天傳遞濃烈的愛與感謝，<br>母親節專屬奢華心形多拿滋，4/25甜心預購！</p>
-                    <a href="#">◆◆◆ 點我預購去 ◆◆◆</a>
-                </div>
-            </div>
-        </div>
-
-
                 <!-- 頁尾 -->
                 <div class="footer container-fluid w-100">
                     <div class="ft">
@@ -109,7 +98,19 @@
                     </div>
                 </div>
 
-
+    <script>
+        $(function(){
+            $('#carousel-ad').carousel({
+                interval: 3000});
+        });
+    </script>
+    <script>
+    $('#carousel-ad').carousel({
+        pause: true,
+        interval: false
+    });
+    </script>
+    
     <script src="./Menu-js - 複製.js"></script>
     <script src="https://kit.fontawesome.com/1d5975ddf1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
