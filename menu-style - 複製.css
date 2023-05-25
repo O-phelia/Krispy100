@@ -211,31 +211,27 @@ cursor: default;
     right: 20px;
 
 }
+.menulist button:active{
+    background-color:  #a45218;
+    transition: 0.1s ease ; 
+    transform: scale(1.2);
+}
 .fa-plus{
     color: #ffffff;
-    
 }
 @media (min-width: 1100px){
     .menulist{
         padding: 0 100px;
     }
 
-.menulist button:active{
-    background-color:  #a45218;
-    transition: 0.1s ease ; 
-    transform: scale(1.2);
-}
-
 
     .menulist .itemBox:hover{
-        transition: 0.3s ease ; 
-        transform: translateY(-20px);
-        /* background-color: #e4d8c1; */
-        background-image: url(./img/TOP底圖.png);
+        transition: 0.3s ease-in-out ; 
+        background-color: #e5dfd6;
         border-radius: 20px;
         padding: 10px;
         border: none;
-        box-shadow:0px 5px 5px rgba(93, 56, 56, 0.8);
+        box-shadow:0px 5px 20px rgba(252, 252, 252, 0.8);
 
     }
     .menulist button:hover{
@@ -251,9 +247,6 @@ cursor: default;
 @media (max-width: 1100px){
     /* 平板橫 */
 
-    .menulist{
-        /* background-color: #8d8e54; */
-    }
     .menulist .itemBox{
         height: 300px;
         width: 155px;
@@ -273,9 +266,6 @@ cursor: default;
 @media (max-width: 769px){
     /* 平板直 */
 
-    .menulist{
-        /* background-color: #4aa458; */
-    }
     .menulist .itemBox{
         height: 270px;
         width: 145px;
@@ -305,9 +295,7 @@ cursor: default;
 
 @media (max-width: 600px){
     /* 手機橫下 */
-    .menulist{
-        /* background-color: #da1212; */
-    }
+
     .menulist .itemBox{
         height: 270px;
         width: 150px;
@@ -322,11 +310,6 @@ cursor: default;
         right: 0px;
     }
 }
-
-
-
-
-
 
 
 /* 購物車------------------------------------------ */
